@@ -22,7 +22,7 @@ pip install torch torchvision torchaudio
 pip install torch-scatter torch-sparse torch-cluster torch-spline-conv -f https://data.pyg.org/whl/torch-2.0.1+cu118.html
 pip install torch-geometric transformers scikit-learn networkx matplotlib pandas numpy scipy
 
-
+```
 
 
 ## Code Structure and Explanation
@@ -78,36 +78,8 @@ To run the code, follow these steps:
    - `lm`: Language model for text embeddings (e.g., `distilbert-base-uncased`).
    - `no_of_clusters`: Number of clusters for node classification.
 
-Example:
-```python
-# Running the model on 'cd' dataset with clustering
-emb, acc_rec_final, acc_final, f_final, in_final, X = run_model(
-    map_path='cd_mapping.csv',
-    edge_path='cd_graph.txt',
-    inv=False,
-    hom=False,
-    use_txt=True,
-    lr=0.0001,
-    X=None,
-    lm='distilbert-base-uncased',
-    no_of_clusters=2
-)
 3. **Evaluate Performance**: After training, performance metrics such as accuracy and F1-score are printed. These metrics are averaged over multiple runs for stability.
 
-## Example Datasets
-
-Sample datasets include:
-- `cd`: Contains topics such as `abortion`, `marijuana`, and `gayRights`.
-- `timme`: TIMME dataset with either `TIMME-All` or `TIMME-Pure` variants.
-
-Configure dataset selection and topics in the script:
-```python
-dat = 'cd'
-top = 'abortion'  # specify topic
-t_all = True  # use TIMME-All
-path = ''  # specify data directory path
-
-
-## Citation
+### Citation
 
 If you use this code, please cite the respective papers and sources for the models and datasets used.
