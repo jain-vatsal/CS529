@@ -83,3 +83,7 @@ To run the code, follow these steps:
 ### Citation
 
 If you use this code, please cite the respective papers and sources for the models and datasets used.
+
+
+### Link to collab
+https://colab.research.google.com/drive/1NSibV078qQAr6T9eOaPoztoIgf3br8bc?usp=sharing
